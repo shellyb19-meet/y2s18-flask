@@ -1,1 +1,8 @@
-/* Put your CSS Styling here! */
+h1{
+    color:blue;
+    height: 60px;
+    border: 1px solid gray;
+    padding: 10px;
+    box-shadow: 10px 10px;
+    text-shadow: 2px 2px red
+}

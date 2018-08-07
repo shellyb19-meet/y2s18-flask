@@ -1,1 +1,25 @@
-<!-- Put the HTML template for your page here! -->
+<html>
+    <head>
+       <title>
+           web
+        </title> 
+           <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+       
+    </head>
+    <body>
+        <div>
+        <h1>ballet</h1>
+        <p>because i love dance</p>
+        <img src="cat.jpg">
+        </div>
+        {% if like_same_sport == false %}
+              
+        {% else %}
+        <ul>
+            {% for player in players %}
+            <li> {{player}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </body>
+</html>

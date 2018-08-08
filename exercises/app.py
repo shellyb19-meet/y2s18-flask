@@ -6,7 +6,10 @@ def index():
     players=["messi", "ronaldo", "naimar"]
     return render_template("index.html", 
     players=players,
-    like_same_sport=True)
+    like_same_sport=True,
+    who="messi",
+    was=False)
+
 def home_page():
     return "ballet"
 

@@ -7,19 +7,31 @@
        
     </head>
     <body>
-        <div>
+        <div class ="con">
+        <div class="sidebar">
+            <p>side barrrr</p>
+        </div>
+        <div class="contect">
         <h1>ballet</h1>
         <p>because i love dance</p>
         <img src="cat.jpg">
-        </div>
         {% if like_same_sport == false %}
               
         {% else %}
         <ul>
             {% for player in players %}
-            <li> {{player}}</li>
+            {%if was==false%}
+                {% if who==player%}
+                <li> {{player}}</li>
+                {% set was=true%}
+                {%else%}
+                <li> {{player}}</li>
+                {% endif %}
+            {% endif %}
             {% endfor %}
         </ul>
         {% endif %}
+        </div>
+        </div>
     </body>
 </html>

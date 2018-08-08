@@ -6,3 +6,27 @@ h1{
     box-shadow: 10px 10px;
     text-shadow: 2px 2px red
 }
+.con{
+    position: relative;
+    height: 500px;
+}
+.sidebar{
+    width: 180px;
+    background: #ff6677;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 15px;
+}
+.contect{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 600px;
+    margin:5px;
+    margin-left: 15px;
+    border: 5px solid blue;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom:  10px;
+}
